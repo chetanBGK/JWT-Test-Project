@@ -21,11 +21,6 @@ import com.firstSpring.Exceptions.ResourceNotFoundException;
 import com.firstSpring.Repository.StudentRepo;
 import com.firstSpring.Service.StudentService;
 
-
-
-
-
-
 @RestController
 public class StudentController {
     

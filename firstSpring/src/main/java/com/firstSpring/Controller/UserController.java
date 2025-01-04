@@ -74,12 +74,14 @@ public class UserController {
     @PostMapping("login")
     public String loginForm(@RequestBody User user) {
         
-        User user1 = userRepo.findByUserName(user.getUserName());
-        
-        if(Objects.isNull(user1)) {
-            return "User not found";
-        }
-        return "Success";
+//        User user1 = userRepo.findByUserName(user.getUserName());
+//
+//        if(Objects.isNull(user1)) {
+//            return "User not found";
+//        }
+//        return "Success";
+
+        return userPassService.verifyUser(user);
     }
     
 
